@@ -326,10 +326,6 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1081px) {
-    
-}
-
 @media screen and (max-width: 1080px) {
     #business, .header{
         display: none;
