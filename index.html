@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="menu-icon-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="logo" id="udemy-logo"><img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Logo"></div>
+        <button id="categories">Categories</button>
+    
+        <div class="search-bar" id="search-bar">
+            <form>
+                    <button type="submit" id="search-button" class="fa fa-search"></button><input type="text" placeholder="Search for anything" name="search" id="search-field"> 
+            </form>
+        </div>
+        <button id="business">Udemy Business</button>
+        <button id="teach">Teach on Udemy</button>
+        <div class="sign-in-up">
+            <div>
+                <button class="fa fa-shopping-cart" id="cart"></button>
+            </div>
+            <div>
+                <button id="log-in">Log in</button>
+            </div>
+            <div>
+                <button id="sign-up">Sign up</button>
+            </div>
+            <div>
+                <button class="fa fa-language" id="languages"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        
+        <div id="wel-msg">
+            <h5>New to Udemy? Lucky you.</h5>
+            <p>Courses start at E£169.99. Get your new student offer before it expires.</p>
+        </div>
+        <img src="assets/alarm.png" alt="Alarm Image" id="alarm">
+    </div>
+
+    <ul id="header-icons" class="header-icons" aria-hidden="true">
+        <div id="small-wel-msg">
+            <h5>New to Udemy? Lucky you.</h5>
+            <p>Courses start at E£169.99. Get your new student offer before it expires.</p>
+        </div>
+        <img src="assets/smallAlarm.png" alt="Alarm Image" id="smallAlarm">
+    </ul>
+
+    <div class="courses-selection">
+        <h1 name="title">A broad selection of courses</h1>
+        <p>Choose from 185,000 online video courses with new additions published every month</p>
+        <div id="choose-course" class="choose-course">
+                <div>
+                    <button id="python">Python</button>
+                </div>
+                <div>
+                    <button id="excel">Excel</button>
+                </div>
+                <div>
+                    <button id="web-development">Web Development</button>
+                </div>
+                <div>
+                    <button id="java-script">JavaScript</button>
+                </div>
+                <div>
+                    <button id="data-science">Data Science</button>
+                </div>
+                <div>
+                    <button id="aws">AWS Certification</button>
+                </div>
+                <div>
+                    <button id="drawing">Drawing</button>
+                </div>
+        </div>
+        <div>
+            <section class="courses">
+                <h2>Expand your career opportunities with Python</h2>
+                <p id="course-intro">
+                    Take one of Udemy's range of Python courses and learn how to code using this incredibly useful language. 
+                    Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. 
+                    You'll learn how to build everything from games to sites to apps. Choose from a range of courses that will 
+                    appeal to both beginners and advanced developers alike.
+                </p>
+                <button id="explore-course">Explore Python</button>
+                <hr color="white">
+                <div class="courses-list">
+                    <div id="course1">
+                        <img src="assets/course1.jpg" alt="Python Course">
+                        <p class="course-name">Learn Python: The Complete Python Programming Course</p>
+                        <p class="course-presenter">Avinash Jain, The Codex</p>
+                        <span id="rating-num">5</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+
+                        <p class="price">E£679.99</p>
+                    </div>
+
+                    <div id="course2">
+                        <img src="assets/course2.jpg" alt="Python Course">
+                        <p class="course-name">Learning Python for Data Analysis and Visualization</p>
+                        <p class="course-presenter">Jose Portilla</p>
+                        <span id="rating-num">4</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price">E£1,599.99</p>
+                        <div class="course-card">
+                            <div id="best-seller" class="best-seller">
+                                Bestseller
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="course3">
+                        <img src="assets/course3.jpg" alt="Python Course">
+                        <p class="course-name">Python for Beginners - Learn Programming from scratch</p>
+                        <p class="course-presenter">Edwin Diaz, Coding Faculty Solutions</p>
+                        <span id="rating-num">5</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="price">E£679.99</p>
+                    </div>
+
+                    <div id="course4">
+                        <img src="assets/course4.jpg" alt="Python Course">
+                        <p class="course-name">Python Beyond the Basics - Object-Oriented Programming</p>
+                        <p class="course-presenter">Abrar Hussain</p>
+                        <span id="rating-num">4</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="price">E£319.99</p>
+                    </div>
+
+                    <div id="course5">
+                        <img src="assets/course5.jpg" alt="Python Course">
+                        <p class="course-name">Python Beyond the Basics - Object-Oriented Programming</p>
+                        <p class="course-presenter">Infinite Skills</p>
+                        <span id="rating-num">5</span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <p class="price">E£519.99</p>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

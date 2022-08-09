@@ -1,0 +1,396 @@
+body {
+    margin: 0px;
+    padding:0px;
+}
+
+.menu-icon-container, .header-icons{
+    display:none;
+}
+
+.nav-bar{
+    width:100%;;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom:0px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.nav-bar > div {
+    margin: 15px 5px 15px 15px;
+    margin-bottom:19px;
+    padding: 5px;
+    padding-top: 0px;
+    font-size: 20px;
+}
+
+.sign-in-up {
+    height:45px;
+    margin-top:0px;
+    margin-bottom:18px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.sign-in-up > div {
+    flex: 1 1 auto;
+    padding-bottom: 30px;
+    margin: 5px;
+}
+
+.course-card {
+    width:57px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding:0px 3px 0px 0px;
+}
+.course-card > div {
+    flex: 1 1 auto;
+    margin: 3px 5px 5px px;
+}
+
+.best-seller {
+    padding: 5px 5px 0px 5px;
+    background-color: #eceb98;
+    color: #3d3c0a;
+    font: bold 10px arial;
+}
+
+.choose-course{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:5%;
+    padding-bottom: 0px;
+}
+
+.choose-course > div {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 10px 0px 0px;
+    font-size: 22px;
+}
+
+.search-bar {
+    flex:1;
+    width:100%;
+    height: 100%;
+    border:1px solid #d1d7dc;
+    border-radius: 55px;
+}
+
+#search-field {
+    display: inline-block;
+    padding-top:10px;
+    height:80%;
+    width:80%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+#search-button{
+    display: inline-block;
+    height:15px;
+    width:40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+.logo {
+    width:6%;
+    height:50%;
+    padding-top: 15px;
+}
+#categories, #business, #teach{
+    height:100%;
+    font-size:14px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: white;
+    padding-bottom: 7px;
+}
+
+#categories:hover, #business:hover, #teach:hover{
+    color: #5624d0;
+}
+
+#log-in {
+    height:40px;
+    width:85px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-style: solid;
+    font: bold 14px arial;
+    max-width: 110px;
+}
+
+#sign-up {
+    height:40px;
+    width:85px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font: bold 13px arial;
+    max-width: 110px;
+}
+
+#log-in:hover, #languages:hover{
+    background-color: rgb(231, 231, 231);
+}
+#cart {
+    height: 40px;
+    width: 25px;
+    cursor: pointer;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    max-width: 110px;
+}
+
+#cart:hover {
+    color: #5624d0;;
+}
+
+.fa-language {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-color: white;
+    background-repeat: no-repeat;
+    max-width: 110px;
+}
+
+
+.header {
+    display:flex;
+    width: 75%;
+    height: 430px;
+    background-color: rgba(244, 242, 242, 0.871);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+    padding:20px;
+}
+
+#wel-msg {
+    width:35%;
+    height:200px;
+    background-color: white;
+    margin-top:55px;
+    margin-left:55px;
+    margin-right: 110px;
+}
+
+#wel-msg h5{
+    text-align: left;
+    padding-top:0px;
+    padding-bottom: 0px;
+    font-size: 20px;
+    margin-bottom:0px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+#wel-msg p{
+    padding-top:10px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+#alarm {
+    margin-left:110px;
+    margin-top: 0px;
+    top:35px;
+}
+
+.courses-selection {
+    width: 70%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+    padding: 20px;
+}
+
+#course-intro {
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.title {
+    margin-top:0px;
+}
+
+#explore-course {
+    height:50px;
+    width:125px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    font-style: solid;
+    font: bold 14px arial;
+}
+
+#explore-course:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.courses {
+    width:100%;
+    border: 1px solid #d1d7dc;
+    padding: 15px 14px 30px 15px;
+    height:100%;
+}
+
+#course1, #course2,#course3,#course4,#course5{
+    display: inline-block;
+    width:250px;
+    margin-right: 3px;
+    margin-bottom: 0px;
+    height:40%;
+    text-align: left;
+}
+
+#course2 {
+    margin-top: 0px;
+}
+
+.course-name, .price {
+    font:bold 15px arial;
+}
+
+.course-presenter{
+    font-size: 13px;
+}
+
+.courses-list {
+    width:100%;
+    margin: 10px;
+    margin-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 5px;
+    height: 100%;
+}
+.courses-list > div {
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 5px;
+    margin-left: 0px;   
+}
+
+
+#course-intro {
+    width: 80%;
+}
+
+.checked {
+    color: orange;
+}
+
+#choose-course span {
+    display: inline-block;
+    margin: 20px;
+    margin-left: 0px;
+    margin-top: 0;
+    font: bold 14px arial;
+}
+
+#rating-num {
+    font: bold 15px arial;
+    color: rgb(172, 115, 8);
+}
+
+#python, #excel, #web-development, #java-script, #data-science, #aws, #drawing {
+    outline: none;
+    border:none;
+    background-color: white;
+    font: bold 14px arial;
+}
+
+#excel, #web-development, #java-script, #data-science, #aws, #drawing {
+    color: rgb(103, 103, 103);
+    background-color: white;
+}
+
+#excel:hover, #web-development:hover, #java-script:hover, #data-science:hover, #aws:hover, #drawing:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1081px) {
+    
+}
+
+@media screen and (max-width: 1080px) {
+    #business, .header{
+        display: none;
+    }
+
+    #smallAlarm {
+        width:50%;
+        margin-left: auto;
+        margin-right: auto; 
+        background-color: rgba(244, 242, 242, 0.871);
+    }
+
+    #small-wel-msg {
+        width:50%;
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    #header-icons {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+    
+}
+
+@media screen and (max-width: 930px) {
+    #teach {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #categories, #search-bar, #log-in, #sign-up, #languages, .header{
+        display: none;
+    }
+
+    #header-icons {
+        display:flex;
+        flex-direction:column-reverse;
+    }
+
+    .menu-icon-container {
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+      
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    #udemy-logo {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        width:15%;
+        height: 100%;
+    }
+}
