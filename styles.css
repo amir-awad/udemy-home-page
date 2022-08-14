@@ -229,8 +229,8 @@ body {
 }
 
 #explore-course {
+    display: inline-block;
     height:50px;
-    width:125px;
     cursor: pointer;
     background-color: white;
     color: black;
@@ -294,6 +294,7 @@ body {
 
 .checked {
     color: orange;
+    margin-right: 3px;
 }
 
 #choose-course span {
@@ -321,7 +322,7 @@ body {
     background-color: white;
 }
 
-#excel:hover, #web-development:hover, #java-script:hover, #data-science:hover, #aws:hover, #drawing:hover {
+#python, #excel:hover, #web-development:hover, #java-script:hover, #data-science:hover, #aws:hover, #drawing:hover {
     color: black;
     cursor: pointer;
 }
