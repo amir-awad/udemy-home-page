@@ -23,8 +23,8 @@
         <button id="categories">Categories</button>
     
         <div class="search-bar" id="search-bar">
-            <form>
-                    <button type="button" id="search-button" class="fa fa-search" ></button><input placeholder="Search for anything" name="search" id="search-field"> 
+            <form name="searchForm">
+                    <button type="button" id="search-button" class="fa fa-search" ></button><input type="text" required="required" onkeyup="checkFormsValidity();" placeholder="Search for anything" autocomplete="off" aria-autocomplete="both" aria-haspopup="false" aria-expanded="false" name="search" id="search-field"> 
             </form>
         </div>
         <button id="business">Udemy Business</button>
@@ -184,17 +184,17 @@
         </div>
     </div>
     <script>
-
-        $(document).ready(function (){
-            validate();
-            $('#search-button, #search-field').change(validate);
-        });
-
-        function validate() {
-            if($('#search-field').val().length > 0) {
-                $('#search-button').prop("disabled", false);
+        const searchButton = document.getElementById("search-button");
+        searchButton.disabled = true;
+        searchButton.style.cssText = "cursor: not-allowed"; 
+        checkFormsValidity = function(){
+            var myForms = document.forms["searchForm"];   
+            if (myForms.checkValidity()) {
+                searchButton.disabled = false;
+                searchButton.style.cssText = "cursor: pointer";
             } else {
-                $('#search-button').prop("disabled", true);
+                searchButton.disabled = true;
+                searchButton.style.cssText = "cursor: not-allowed";
             }
         }
 
