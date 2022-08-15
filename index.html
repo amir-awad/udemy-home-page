@@ -230,7 +230,11 @@
             }
             const myNode = document.querySelector(".courses-list");
             const searchResult = document.querySelector("h1");
-            searchResult.textContent = (filteredCourses.length + " results for (" + searchInput + ")").toString();
+            if(filteredCourses.length > 0)
+                searchResult.textContent = filteredCourses.length + " results for (" + searchInput + ")";
+            else{
+                searchResult.textContent = "Sorry, we couldn't find any results for (" + searchInput + ")";
+            }
             const coursesButtons = document.querySelector(".choose-course");
             coursesButtons.style.cssText = "display: none";
             const h2 = document.querySelector("h2");
