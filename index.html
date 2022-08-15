@@ -57,7 +57,9 @@
         
         <div id="wel-msg">
             <h5>New to Udemy? Lucky you.</h5>
-            <p>Courses start at E£169.99. Get your new student offer before it expires.</p>
+            <p>
+                Courses start at E£169.99. Get your new student offer before it expires.
+            </p>
         </div>
         <img src="assets/alarm.png" alt="Alarm Image" id="alarm">
     </div>
@@ -253,7 +255,7 @@
             for(let i=0;i<filteredCourses.length;i++){
                 course = filteredCourses[i];
                 const div = document.createElement("div");
-                div.style.cssText = "display: inline-block;width: 250px; margin-right: 3px; margin-bottom: 0px; height:40%; text-align: left";
+                div.style.cssText = "display: inline-block;width: 250px; margin-right: 5px; margin-bottom: 0px; height:40%; text-align: left";
                 const courseImage = document.createElement("img");
                 courseImage.src = course.image;
                 courseImage.alt = "Course Image";

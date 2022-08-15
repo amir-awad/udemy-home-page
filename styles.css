@@ -169,9 +169,13 @@ body {
 
 .header {
     display:flex;
-    width: 75%;
-    height: 430px;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    max-width: 1340px;
+    height: 330px;
     background-color: rgba(244, 242, 242, 0.871);
+    align-items: center;
+    margin: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-top:0px;
@@ -179,39 +183,36 @@ body {
 }
 
 #wel-msg {
-    width:35%;
-    height:200px;
+    padding: 0px 25px 15px 10px;
     background-color: white;
-    margin-top:55px;
-    margin-left:55px;
-    margin-right: 110px;
+    margin-left: 80px;
+    height: 160px;
+    width: 350px;
 }
 
 #wel-msg h5{
     text-align: left;
     padding-top:0px;
     padding-bottom: 0px;
-    font-size: 20px;
+    font-size: 30px;
     margin-bottom:0px;
     margin-top: 25px;
     margin-left: 25px;
 }
 
 #wel-msg p{
-    padding-top:10px;
-    padding-bottom: 0px;
-    font-size: 15px;
-    margin-left: 25px;
+    font-size:20px;
+    margin-left:25px;
 }
 
 #alarm {
-    margin-left:110px;
-    margin-top: 0px;
-    top:35px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
 }
 
 .courses-selection {
-    width: 70%;
+    width: 85%;
     height: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -244,6 +245,8 @@ body {
 
 .courses {
     width:100%;
+    margin-left: auto;
+    margin-right: auto;
     border: 1px solid #d1d7dc;
     padding: 15px 14px 30px 15px;
     height:100%;
@@ -251,8 +254,8 @@ body {
 
 #course1, #course2,#course3,#course4,#course5{
     display: inline-block;
-    width:250px;
-    margin-right: 3px;
+    width:285px;
+    margin-right: 5px;
     margin-bottom: 0px;
     height:40%;
     text-align: left;
@@ -284,12 +287,12 @@ body {
     text-align: center;
     padding-bottom: 10px;
     margin: 5px;
-    margin-left: 0px;   
+    margin-left: 0px;
 }
 
 
 #course-intro {
-    width: 80%;
+    width: 60%;
 }
 
 .checked {
@@ -314,7 +317,7 @@ body {
     outline: none;
     border:none;
     background-color: white;
-    font: bold 14px arial;
+    font: bold 16px arial;
 }
 
 #excel, #web-development, #java-script, #data-science, #aws, #drawing {
@@ -322,7 +325,7 @@ body {
     background-color: white;
 }
 
-#python, #excel:hover, #web-development:hover, #java-script:hover, #data-science:hover, #aws:hover, #drawing:hover {
+#python:hover, #excel:hover,#web-development:hover, #java-script:hover, #data-science:hover, #aws:hover, #drawing:hover {
     color: black;
     cursor: pointer;
 }
