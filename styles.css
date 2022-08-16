@@ -350,7 +350,10 @@ body {
 
     #header-icons {
         display:flex;
+        margin: 0px;
         width: 100%;
+        padding-left: 10px;
+        max-width:none;
         flex-direction:column-reverse;
     }
 
@@ -375,6 +378,8 @@ body {
     #header-icons {
         display:flex;
         width: 100%;
+        margin:0px;
+        max-width: none;
         flex-direction:column-reverse;
     }
 
