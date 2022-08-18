@@ -194,14 +194,14 @@ body {
     text-align: left;
     padding-top:0px;
     padding-bottom: 0px;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom:0px;
     margin-top: 25px;
     margin-left: 25px;
 }
 
 #wel-msg p{
-    font-size:20px;
+    font-size:15px;
     margin-left:25px;
 }
 
@@ -212,8 +212,8 @@ body {
 }
 
 .courses-selection {
-    width: 85%;
-    height: 800px;
+    width: 1550px;
+    height: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-top:0px;
@@ -233,6 +233,7 @@ body {
     display: inline-block;
     height:50px;
     cursor: pointer;
+    margin-bottom: 15px;
     background-color: white;
     color: black;
     font-style: solid;
@@ -257,6 +258,7 @@ body {
     width:285px;
     margin-right: 5px;
     margin-bottom: 0px;
+    margin-left:12px;
     height:40%;
     text-align: left;
 }
@@ -330,6 +332,17 @@ body {
     cursor: pointer;
 }
 
+@media screen and (max-width:1480px){
+    .courses-selection {
+        width: 85%;
+        height: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:0px;
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     #business, .header{
         display: none;
@@ -356,8 +369,6 @@ body {
         max-width:none;
         flex-direction:column-reverse;
     }
-
-    
 }
 
 @media screen and (max-width: 930px) {
