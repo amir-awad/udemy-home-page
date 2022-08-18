@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="styles.css" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
     <div class="nav-bar">
@@ -108,83 +109,215 @@
                     appeal to both beginners and advanced developers alike.
                 </p>
                 <button id="explore-course">Explore Python</button>
-                <hr color="white">
-                <div class="courses-list">
-                    <div id="course1">
-                        <img src="assets/python/course1.jpg" alt="Python Course">
-                        <p class="course-name">Learn Python: The Complete Python Programming Course</p>
-                        <p class="course-presenter">Avinash Jain, The Codex</p>
-                        <span id="rating-num">5</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
+                <div id="carouselExampleControls" class="courses-selection carousel slide" style="width:95%;height:300px">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div style="display:flex;flex-direction:row">
+                                <div id="course1">
+                                    <img src="assets/python/course1.jpg" alt="Python Course">
+                                    <p class="course-name">Learn Python: The Complete Python Programming Course</p>
+                                    <p class="course-presenter">Avinash Jain, The Codex</p>
+                                    <span id="rating-num">5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <p class="price">E£679.99</p>
+                                </div>
 
-                        <p class="price">E£679.99</p>
-                    </div>
+                                <div id="course2">
+                                    <img src="assets/python/course2.jpg" alt="Python Course">
+                                    <p class="course-name">Learning Python for Data Analysis and Visualization</p>
+                                    <p class="course-presenter">Jose Portilla</p>
+                                    <span id="rating-num">4</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p class="price">E£1,599.99</p>
+                                    <div class="course-card">
+                                        <div id="best-seller" class="best-seller">
+                                            Bestseller
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div id="course2">
-                        <img src="assets/python/course2.jpg" alt="Python Course">
-                        <p class="course-name">Learning Python for Data Analysis and Visualization</p>
-                        <p class="course-presenter">Jose Portilla</p>
-                        <span id="rating-num">4</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p class="price">E£1,599.99</p>
-                        <div class="course-card">
-                            <div id="best-seller" class="best-seller">
-                                Bestseller
+                                <div id="course3">
+                                    <img src="assets/python/course3.jpg" alt="Python Course">
+                                    <p class="course-name">Python for Beginners - Learn Programming from scratch</p>
+                                    <p class="course-presenter">Edwin Diaz, Coding Faculty Solutions</p>
+                                    <span id="rating-num">5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <p class="price">E£679.99</p>
+                                </div>
+
+                                <div id="course4">
+                                    <img src="assets/python/course4.jpg" alt="Python Course">
+                                    <p class="course-name">Python Beyond the Basics - Object-Oriented Programming</p>
+                                    <p class="course-presenter">Abrar Hussain</p>
+                                    <span id="rating-num">4</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p class="price">E£319.99</p>
+                                </div>
+
+                                <div id="course5">
+                                    <img src="assets/python/course5.jpg" alt="Python Course">
+                                    <p class="course-name">Python Beyond the Basics - Object-Oriented Programming</p>
+                                    <p class="course-presenter">Infinite Skills</p>
+                                    <span id="rating-num">5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <p class="price">E£519.99</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div style="display:flex;flex-direction:row">
+                                <div id="course1">
+                                    <img src="assets/python/course6.jpg" alt="Python Course">
+                                    <p class="course-name">Python From Scratch & Selenium WebDriver QA Automation 2022</p>
+                                    <p class="course-presenter">Admas Kinfu</p>
+                                    <span id="rating-num">5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+
+                                    <p class="price">E£1,299.99</p>
+                                </div>
+
+                                <div id="course2">
+                                    <img src="assets/python/course7.jpg" alt="Python Course">
+                                    <p class="course-name">Teach Your Kids to Code: Learn to Program Python at Any Age!</p>
+                                    <p class="course-presenter">Bryson Payne</p>
+                                    <span id="rating-num">4</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <p class="price">E£319.99</p>
+                                    <div class="course-card">
+                                        <div id="best-seller" class="best-seller">
+                                            Bestseller
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="course3">
+                                    <img src="assets/python/course8.jpg" alt="Python Course">
+                                    <p class="course-name">Python for Data Structures, Algorithms, and Interviews!</p>
+                                    <p class="course-presenter">Jose Portilla</p>
+                                    <span id="rating-num">5</span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <p class="price">E£1,299.99</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div id="course3">
-                        <img src="assets/python/course3.jpg" alt="Python Course">
-                        <p class="course-name">Python for Beginners - Learn Programming from scratch</p>
-                        <p class="course-presenter">Edwin Diaz, Coding Faculty Solutions</p>
-                        <span id="rating-num">5</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <p class="price">E£679.99</p>
-                    </div>
-
-                    <div id="course4">
-                        <img src="assets/python/course4.jpg" alt="Python Course">
-                        <p class="course-name">Python Beyond the Basics - Object-Oriented Programming</p>
-                        <p class="course-presenter">Abrar Hussain</p>
-                        <span id="rating-num">4</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <p class="price">E£319.99</p>
-                    </div>
-
-                    <div id="course5">
-                        <img src="assets/python/course5.jpg" alt="Python Course">
-                        <p class="course-name">Python Beyond the Basics - Object-Oriented Programming</p>
-                        <p class="course-presenter">Infinite Skills</p>
-                        <span id="rating-num">5</span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <p class="price">E£519.99</p>
-                    </div>
+                    <button class="carousel-control-prev" type="button" style="background-color:black;width:20px;" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                    <button class="carousel-control-next" type="button" style="background-color:black;width:20px" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
 
                 </div>
             </section>
         </div>
     </div>
+    
+    <div class="container-fluid" style="width: 80%;max-width:1450px;margin-left: auto;margin-right: auto;">
+        <h4>Top Categories</h4>
+        <div class="row justify-content-between">
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category1.jpg" alt="Design Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Design</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category2.jpg" alt="Development Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Development</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category3.jpg"  alt="Marketing Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Marketing</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category4.jpg" alt="IT and Software Category">
+                    <div class="card-body">
+                        <h6 class="card-text">IT and Software</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category5.jpg"  alt="Personal Development Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Personal Development</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category6.jpg" alt="Business Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Business</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category7.jpg" alt="Photography Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Photography</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 col-xxl-3 col-sm-12 col-md-4 col-lg-3" style="width:17rem">
+                    <img src="assets/top-categories/category8.jpg" alt="Music Category">
+                    <div class="card-body">
+                        <h6 class="card-text">Music</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>

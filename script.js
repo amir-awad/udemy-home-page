@@ -32,11 +32,6 @@ function readJson () {
 }
 readJson();
 
-// const searchForm = document.querySelector("#searchForm");
-// searchFrom.addEventListener("submit", async function (e) {
-//     e.preventDefault();
-// });
-
 const searchBtn = document.querySelector("#search-button");
 
 searchBtn.addEventListener('click', async function(){
@@ -65,12 +60,20 @@ searchBtn.addEventListener('click', async function(){
 });            
 
 function showFilteredCourses(filteredCourses) {
-    const myNode = document.querySelector(".courses-list");
-    myNode.innerHTML = "";
+    const carouselInnerDiv = document.querySelector(".carousel-inner");
+    carouselInnerDiv.innerHTML = "";
+    const carouselItemDiv = document.createElement("div");
+    carouselItemDiv.className = "carousel-item active";
+    carouselInnerDiv.appendChild(carouselItemDiv);
+    let styleDiv = document.createElement("div");
+    styleDiv.style.cssText = "display:flex;flex-direction:row";
+    carouselItemDiv.appendChild(styleDiv);
+    let coursesCount = 5;
+
     for(let i=0;i<filteredCourses.length;i++){
         let course = filteredCourses[i];
         const div = document.createElement("div");
-        div.style.cssText = "display: inline-block;width: 250px; margin-right: 5px; margin-bottom: 0px; height:40%; text-align: left";
+        div.style.cssText = "display: inline-block;width: 250px; margin-right: 5px; margin-bottom: 0px; margin-left:12px; height:40%; text-align: left";
         const courseImage = document.createElement("img");
         courseImage.src = course.image;
         courseImage.alt = "Course Image";
@@ -108,8 +111,24 @@ function showFilteredCourses(filteredCourses) {
         div.appendChild(fifthStar);
         div.appendChild(coursePrice);
 
-        myNode.appendChild(div);
+        if(--coursesCount > 0)
+            styleDiv.appendChild(div);
+        else{
+            styleDiv.appendChild(div);
+            if(i+1 < filteredCourses.length){
+                console.log("text",div.textContent);
+                let carouselDiv = document.createElement("div");
+                carouselDiv.className = "carousel-item";
+                carouselInnerDiv.appendChild(carouselDiv);
+                const style = document.createElement("div");
+                style.style.cssText = "display:flex;flex-direction:row";
+                carouselDiv.appendChild(style);
+                styleDiv=style;
+                coursesCount=5;
+            }
+        }
     }
+
 }
 
 let coursesButtons = [];
@@ -231,7 +250,5 @@ function tabCourses(name){
         if(f)
             filteredCourses.push(course);
     }
-    
-    console.log(filteredCourses);
     showFilteredCourses(filteredCourses);
 }
