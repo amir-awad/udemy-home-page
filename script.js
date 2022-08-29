@@ -2,7 +2,7 @@ const searchButton = document.getElementById("search-button");
 searchButton.disabled = true;
 searchButton.style.cssText = "cursor: not-allowed"; 
 const checkFormsValidity = function(){
-    var myForms = document.forms["searchForm"];   
+    const myForms = document.forms["searchForm"];   
     if (myForms.checkValidity()) {
         searchButton.disabled = false;
         searchButton.style.cssText = "cursor: pointer";
@@ -123,7 +123,6 @@ function showFilteredCourses(filteredCourses) {
         else{
             styleDiv.appendChild(div);
             if(i+1 < filteredCourses.length){
-                console.log("text",div.textContent);
                 let carouselDiv = document.createElement("div");
                 carouselDiv.className = "carousel-item";
                 carouselInnerDiv.appendChild(carouselDiv);
@@ -252,7 +251,6 @@ function changeButtonsStyle(name){
 function tabCourses(name){
     let filteredCourses = [];
     for(let course of courses){
-        console.log('course ',course);
         let f = ((name==="Python"&&course.id<=8) || (name==="Excel"&&course.id>8&&course.id<=16) || (name==="Web Development"&&course.id>16&&course.id<=24) || (name==="JavaScript"&&course.id>24&&course.id<=32) || (name==="Data Science"&&course.id>32&&course.id<=40) || (name==="AWS Certification"&&course.id>40&&course.id<=48) || (name==="Drawing"&&course.id>48&&course.id<=56));
         if(f)
             filteredCourses.push(course);
