@@ -1,7 +1,7 @@
 const searchButton = document.getElementById("search-button");
 searchButton.disabled = true;
 searchButton.style.cssText = "cursor: not-allowed"; 
-checkFormsValidity = function(){
+const checkFormsValidity = function(){
     var myForms = document.forms["searchForm"];   
     if (myForms.checkValidity()) {
         searchButton.disabled = false;
@@ -32,16 +32,22 @@ function readJson () {
 }
 readJson();
 
-const searchBtn = document.querySelector("#search-button");
+const searchField = document.querySelector("#search-field");
+searchField.addEventListener("keydown", async function (e) {
+    if (e.key === "Enter") {  //checks whether the pressed key is "Enter"
+        validate(e);
+    }
+});
 
-searchBtn.addEventListener('click', async function(){
-    let searchInput = document.getElementById('search-field').value;
+function validate(e) {
+    e.preventDefault();
+    let searchInput = e.target.value;
+    //validation of the input...
     let filteredCourses = [];
     for(let course of courses){
         if(course.title.toLowerCase().includes(searchInput.toLowerCase()))
             filteredCourses.push(course);
     }
-    const myNode = document.querySelector(".courses-list");
     const searchResult = document.querySelector("h1");
     if(filteredCourses.length > 0)
         searchResult.textContent = filteredCourses.length + " results for (" + searchInput + ")";
@@ -57,7 +63,8 @@ searchBtn.addEventListener('click', async function(){
     const exploreButton = document.querySelector("#explore-course");
     exploreButton.style.cssText = "display: none";
     showFilteredCourses(filteredCourses);
-});            
+
+}
 
 function showFilteredCourses(filteredCourses) {
     const carouselInnerDiv = document.querySelector(".carousel-inner");
